@@ -2,9 +2,10 @@
 using namespace std;
 
  void selection_sort(int arr[], int n){
-    for(int i =0 ; i < n-2 ; i++){
+    for(int i =0 ; i < n-2 ; i++){ // code run for n-2 because after that only one element is left
+
         int mini = i;
-        for(int j=i ; j < n-1;j++){
+        for(int j=i ; j < n-1;j++){// this will run for last element for swap
             if(arr[j] < arr[mini]) {
                 mini = j;
             }
