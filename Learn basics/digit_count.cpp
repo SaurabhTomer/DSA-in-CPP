@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+ int digit_count(int num){
+      int count = 0;
+
+    while(num > 0){
+        int last_digit = num % 10;
+
+        num = num / 10;
+        count++;
+    }
+    return count;
+}
+
+int main(){
+    int num;
+    cout << " Enter Number:";
+    cin >> num;
+
+    int answer = digit_count(num);
+    cout << answer;
+  
+    
+ }
