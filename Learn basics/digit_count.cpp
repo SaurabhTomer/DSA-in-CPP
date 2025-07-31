@@ -13,13 +13,23 @@ using namespace std;
     return count;
 }
 
+int log_method(int num){
+
+    int cnt = (int)(log10(num) + 1);
+
+        return cnt;
+
+}
+
 int main(){
     int num;
     cout << " Enter Number:";
     cin >> num;
 
     int answer = digit_count(num);
-    cout << answer;
+    // cout << answer;
+    int answer_2 = log_method(num);
+    cout << answer_2;
   
     
  }
