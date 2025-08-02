@@ -23,7 +23,7 @@ int main()
     // iterate in map
     for (auto it : mpp)
     {
-        cout << it.first << "->" << it.second << endl;
+        cout << it.first << "->" << it.second << endl; // sorted manner
     }
 
     int q;
