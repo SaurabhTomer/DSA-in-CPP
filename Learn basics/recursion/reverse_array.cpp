@@ -1,7 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void reverse(int arr[] ,int start , int end){
+
+//USING 2 POINTERS
+void reverse_1(int arr[] ,int start , int end){
   
     if(start >= end){
         return ;
@@ -10,6 +12,9 @@ void reverse(int arr[] ,int start , int end){
     reverse(arr, start + 1 , end - 1);  // calls itself until condiotion is not matched
 
 }
+
+//USING 1 POINTER
+
 
 int main(){
     int arr[]={1,2,3,4,5};
