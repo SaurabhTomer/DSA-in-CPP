@@ -16,10 +16,14 @@ int main() {
     }
 
     // pre computee
-    map<int,int> mpp;
+    map<int,int> mpp;       // store value in sort manner
     for(int i = 0; i < n; i++) {
         mpp[arr[i]]++;
             
+    }
+//iterate in map
+    for(auto it : mpp){
+        cout ,,it.first<<"->" << it.second << endl;
     }
     
 
